@@ -58,14 +58,22 @@ const wineOptions = {
 
 //Document ready
 $(function() {
-
-    // saving the user selections on the form in variables
-    const wineLevel = document.querySelector('input[name="questionOne"]:checked').id;
-    const redOrWhite = document.querySelector('input[name="questionTwo"]:checked').id;
-    const foodPairing = document.querySelector('input[name="questionThree"]:checked').id;
-    console.log(wineLevel);
-    console.log(redOrWhite);
-    console.log(foodPairing);
-
+    //on click of button, capture the selections of the raio buttons
+    $('button').on('click', function(e){
+        //prevent button from refreshing the page
+        e.preventDefault();
+        
+        // saving the user selections on the form in variables
+        const wineLevel = $("input[name=questionOne]:checked").val();
+        const redOrWhite = $("input[name=questionTwo]:checked").val();
+        const foodPairing = $("input[name=questionThree]:checked").val();
+        console.log(wineLevel);
+        console.log(redOrWhite);
+        console.log(foodPairing);
+    })
 
 });
+
+        // const wineLevel = document.querySelector('input[name="questionOne"]:checked').id;
+        //const redOrWhite = document.querySelector('input[name="questionTwo"]:checked').id;
+        //const foodPairing = document.querySelector('input[name="questionThree"]:checked').id;
