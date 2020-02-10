@@ -67,13 +67,22 @@ $(function() {
         const wineLevel = $("input[name=questionOne]:checked").val();
         const redOrWhite = $("input[name=questionTwo]:checked").val();
         const foodPairing = $("input[name=questionThree]:checked").val();
-        console.log(wineLevel);
-        console.log(redOrWhite);
-        console.log(foodPairing);
+       
+        const colorChoice = wineOptions[redOrWhite]; //filtering down to red or white
+        const results = [];
+
+        for (let index = 0; index < colorChoice.length; index++){
+            if(colorChoice[index].id === foodPairing) {
+                results.push(colorChoice[index].title);
+            }
+        }
+        // console.log('results', results);
+        
+        //printing out result
+        $('.answer').html(`<h2>Pour yourself some ${results} </h2>`);
+
     })
+
 
 });
 
-        // const wineLevel = document.querySelector('input[name="questionOne"]:checked').id;
-        //const redOrWhite = document.querySelector('input[name="questionTwo"]:checked').id;
-        //const foodPairing = document.querySelector('input[name="questionThree"]:checked').id;
