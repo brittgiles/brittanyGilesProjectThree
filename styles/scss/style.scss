@@ -1,2 +1,70 @@
 @import 'setup';
 @import 'variables';
+
+body {
+    background: #F2F2F4;
+}
+
+header {
+    height: 70vh;
+    width: 100%;
+}
+
+h1 {
+    // color: rgb(250, 183, 166);
+    color: #F15632;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 12rem;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 span {
+    display: block;
+    font-size: 5rem;
+    font-style: italic;
+    text-transform: lowercase;
+    color: black;
+}
+
+header p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+    color: black;
+    text-align: center;
+}
+
+.headerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+}
+
+.containerOne {
+    // background: $primaryColor;
+    height: 30vh;
+    text-align: center;
+}
+
+.containerTwo {
+    // background: $secondaryColor;
+    height:50vh;
+    text-align: center;
+}
+
+.containerThree {
+    // background: $tertiaryColor;
+    height: 50vh;
+    text-align: center;
+}
+
+button {
+    text-align: center;
+    border: 0;
+    // background: $accentColor;
+    padding: 10px;
+    margin: 0 auto;
+}

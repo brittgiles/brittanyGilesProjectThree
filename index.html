@@ -6,31 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>(not so) pour decisions: find your wine</title>
     <link rel="stylesheet" href="styles/style.css">
-    <!-- Link in google fonts here -->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto:300&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
     <header>
-        <h1>(not so) pour decisions</h1>
-        <p>what kind of wine should you be sipping on today?</p>
+        <div class="headerText">
+            <h1><span>(not so)</span> pour decisions</h1>
+            <p>what kind of wine should you be sipping on today?</p>
+        </div>
     </header>
     <main>
         <form action="">
-            <div class="questionContainer">
+            <div class="questionContainer containerOne">
                 <h2>Are you a novice or a pro when it comes to wine?</h2>
-                    <input type="radio" class="radioForm" name="questionOne" id="noviceWine" value="novice">
+                    <input type="radio" class="radioForm" name="questionOne" id="novice" value="novice">
                     <label for="noviceWine">I'm no wino</label>
-                    <input type="radio" class="radioForm" name="questionOne" id="proWine" value="pro">
+                    <input type="radio" class="radioForm" name="questionOne" id="pro" value="pro">
                     <label for="proWine">I'm an amateur sommelier</label>
             </div>
-            <div class="questionContainer">
+            <div class="questionContainer containerTwo">
                 <h2>Do you prefer red or white wine?</h2>
                 <input type="radio" class="radioForm" name="questionTwo" id="redWine" value="red">
                 <label for="redWine">Give me that red</label>
                 <input type="radio" class="radioForm" name="questionTwo" id="whiteWine" value="white">
                 <label for="whiteWine">Give me that white</label>
             </div>
-            <div class="questionContainer">
+            <div class="questionContainer containerThree">
                 <h2>What are you pairing this with?</h2>
                 <input type="radio" class="radioForm" name="questionThree" id="vegetables" value="vegetables">
                 <label for="vegetables">Vegetables</label>
