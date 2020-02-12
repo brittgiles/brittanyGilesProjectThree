@@ -45,26 +45,45 @@ header p {
 
 .containerOne {
     // background: $primaryColor;
-    height: 30vh;
+    height: 20vh;
     text-align: center;
 }
 
 .containerTwo {
     // background: $secondaryColor;
-    height:50vh;
+    height:20vh;
     text-align: center;
 }
 
 .containerThree {
     // background: $tertiaryColor;
-    height: 50vh;
+    height: 20vh;
     text-align: center;
+}
+
+.button {
+    display: flex;
 }
 
 button {
     text-align: center;
-    border: 0;
-    // background: $accentColor;
+    border: 1px solid $accentColor;
+    background: $accentColor;
     padding: 10px;
-    margin: 0 auto;
+    margin: 20px auto;
+}
+
+button:hover,
+button:focus {
+    background: white;
+    border: 1px solid black;
+}
+
+.answer {
+    height: 20vh;
+    text-align: center;
+}
+
+label {
+    margin-right: 15px;
 }

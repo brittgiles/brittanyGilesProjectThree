@@ -3,72 +3,62 @@ const wineOptions = {
     white: [
         {
             title: 'Pinot Grigio',
-            //pairsWith: 'Vegetables',
             id: 'vegetables',
-            pro: 'this is the pro pinot string',
-            novice: 'this is the novice pinot string',
+            pro: 'Pinot Grigio tends to be slightly citrusy with hints of apples and flowers. This lightness makes it a natural pairing for veggie dishes.',
+            novice: 'Pinot Grigio is one of the lighter white wines available, which makes it perfect for pairing with a veggie dish.',
         },
         {
             title: 'Chardonnay',
-            //pairsWith: 'Cheese',
             id: 'cheese',
-            pro: 'this is the pro chardonnay string',
-            novice: 'this is the novice chardonnay string',
+            pro: 'Opt for a full bodied, oak aged chardonnay for a perfect match to go with your cheese spread.',
+            novice: "Lots of people think that they don't like chardonnay, but it's great for pairing with food. Enjoy it with your next cheese spread!",
         },
         {
             title: 'Riesling',
-            //pairsWith: 'Red Meat',
             id: 'redMeat',
             pro: 'this is the pro string',
             novice: 'this is the novice string',
         },
         {
             title: 'Chardonnay',
-            //pairsWith: 'White Meat',
             id: 'whiteMeat',
-            pro: 'this is the pro string',
-            novice: 'this is the novice string',
+            pro: 'Opt for a young, unoaked chardonnay from a cool climate for the best match with your dish.',
+            novice: "Chardonnay pairs well with delicate food like chicken, so you've got a perfect match.",
         },
         {
             title: 'Pinot Grigio',
-            //pairsWith: 'Fish',
             id: 'fish',
-            pro: 'this is the pro string',
-            novice: 'this is the novice string',
+            pro: 'Pinot Grigio tends to be slightly citrusy with hints of apples and flowers. This lightness makes it a natural pairing for your fish.',
+            novice: 'Pinot Grigio is one of the lighter white wines available, which makes it perfect for pairing with a fish dish.',
         }
     ],
     red: [
         {
             title: 'Pinot Noir',
-            //pairsWith: 'Vegetables',
             id: 'vegetables',
             pro: 'this is the pro string',
             novice: 'this is the novice string',
         },
         {
             title: 'Cabernet Sauvignon',
-            //pairsWith: 'Cheese',
             id: 'cheese',
             pro: 'this is the pro string',
             novice: 'this is the novice string',
         },
         {
             title: 'Cabernet Sauvignon',
-            //pairsWith: 'Red Meat',
             id: 'redMeat',
             pro: 'this is the pro string',
             novice: 'this is the novice string',
         },
         {
             title: 'Merlot',
-            //pairsWith: 'White Meat',
             id: 'whiteMeat',
             pro: 'this is the pro string',
             novice: 'this is the novice string',
         },
         {
             title: 'Pinot Noir',
-            //pairsWith: 'Fish',
             id: 'fish',
             pro: 'this is the pro string',
             novice: 'this is the novice string',
@@ -92,36 +82,25 @@ $(function() {
         const redOrWhite = $("input[name=questionTwo]:checked").val();
         const foodPairing = $("input[name=questionThree]:checked").val();
         
-        //console.log('wine level', wineLevel);
         const colorChoice = wineOptions[redOrWhite]; //filtering down to red or white
         const results = [];
+        const wineDescription = [];
 
         for (let index = 0; index < colorChoice.length; index++){
             if(colorChoice[index].id === foodPairing) {
+                //determining the wine type based on colour/food
                 results.push(colorChoice[index].title);
+                //pull the appropriate wine description from the array based on familiarity with wine
+                if(wineLevel === 'pro') {
+                    wineDescription.push(colorChoice[index].pro);
+                } else if(wineLevel === 'novice') {
+                    wineDescription.push(colorChoice[index].novice);
+                }
             }
         }
-        console.log('results', results);
-        
-        //pull description from array based on familiarity with wine
-        const wineDescription = [];
-        for (let index = 0; index < colorChoice.length; index++) {
-            if(wineLevel === 'pro') {
-                wineDescription.push(colorChoice[index].pro);
-            } 
-            if (wineLevel === 'novice') {
-                wineDescription.push(colorChoice[index].novice);
-            }
-        }
-
-        console.log('wine description:', wineDescription);
 
         //printing out result
         $('.answer').html(`<h2>Pour yourself some ${results} </h2>
         <p>${wineDescription}</p>`);
-
     })
-
-
 });
-

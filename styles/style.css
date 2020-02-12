@@ -321,23 +321,45 @@ header p {
 }
 
 .containerOne {
-  height: 30vh;
+  height: 20vh;
   text-align: center;
 }
 
 .containerTwo {
-  height: 50vh;
+  height: 20vh;
   text-align: center;
 }
 
 .containerThree {
-  height: 50vh;
+  height: 20vh;
   text-align: center;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 button {
   text-align: center;
-  border: 0;
+  border: 1px solid #2a9d8f;
+  background: #2a9d8f;
   padding: 10px;
-  margin: 0 auto;
+  margin: 20px auto;
+}
+
+button:hover,
+button:focus {
+  background: white;
+  border: 1px solid black;
+}
+
+.answer {
+  height: 20vh;
+  text-align: center;
+}
+
+label {
+  margin-right: 15px;
 }
