@@ -16,8 +16,8 @@ const wineOptions = {
         {
             title: 'Riesling',
             id: 'redMeat',
-            pro: 'this is the pro string',
-            novice: 'this is the novice string',
+            pro: "This sweeter white wine pairs well with many things, which includes red meats, particularly if it's a spicy dish. While red wine may be the more popular choice, if you're going for white then a Riesling is the way to go.",
+            novice: 'A Riesling is a sweeter white wine that will pair nicely with your meal.',
         },
         {
             title: 'Chardonnay',
@@ -36,32 +36,32 @@ const wineOptions = {
         {
             title: 'Pinot Noir',
             id: 'vegetables',
-            pro: 'this is the pro string',
-            novice: 'this is the novice string',
+            pro: "Ethereally aromatic with firm tannins that aren't obtrusive, this pairs well with a variety of foods. More fruit-forward pinots from California, Oregon, and New Zealand would pair well with a veggie-focused dish.",
+            novice: 'This more fruit-forward type of wine pairs well with a veggie-focused dish and your best bet is to select one from either the California, Oregon, or New Zealand regions.',
         },
         {
             title: 'Cabernet Sauvignon',
             id: 'cheese',
-            pro: 'this is the pro string',
-            novice: 'this is the novice string',
+            pro: "Cab Sauv is always a gouda idea for cheese. It goes particularly well with an aged cheddar and, you guessed it, gouda, as well as blue cheese like gorgonzola.",
+            novice: "If you're looking for a red to go with your cheese-based dish or cheese plate, look no further then a Cab Sauv. It works especially well with a cheddar or gouda.",
         },
         {
             title: 'Cabernet Sauvignon',
             id: 'redMeat',
-            pro: 'this is the pro string',
-            novice: 'this is the novice string',
+            pro: "You can't get a much better pairing than these two! While it pairs well with a red meat served rare, there are different styles of cabernet to experiment with. Keep in mind that with young cabernets it helps to have an element of charring or spice to offset the sweetness and tannins.",
+            novice: "Cab Sauv and red meat are a match made in wine pairing heaven, particularly when it's a red meat served rare.",
         },
         {
             title: 'Merlot',
             id: 'whiteMeat',
-            pro: 'this is the pro string',
-            novice: 'this is the novice string',
+            pro: "This medium-bodied blend tends to pair well with the umami with white meats, particularly grilled chicken. The inherent sweetness of this blend also makes it work well with spices or black pepper. For turkey, opt for a riper style of merlot while for chicken, you may want a classic, more elegant style of merlot. ",
+            novice: "This medium-bodied blend pairs well with white meats like turkey or chicken thanks to its inherent sweetness.",
         },
         {
             title: 'Pinot Noir',
             id: 'fish',
-            pro: 'this is the pro string',
-            novice: 'this is the novice string',
+            pro: "For pairing with fish, opt for a sweetly fruited pinot from the Chile, New Zealand, and California. These wines go particularly well with fish like salmon or tuna. This versatile wine is great for ordering at a restaurant when you're ordering different things.",
+            novice: "A pinot is a great option to go with your fish because the sweet, fruitier varieties will be balanced with your dish. Check for a pinot in the Chile, New Zealand, or California areas for a great fit.",
         }
     ],
 }

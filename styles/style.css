@@ -244,8 +244,9 @@ h4,
 p {
   margin: 0 auto;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.8rem;
+  font-family: 'Lora', serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
   color: black;
 }
 
@@ -277,17 +278,31 @@ body {
 }
 
 header {
-  height: 70vh;
+  height: 100vh;
   width: 100%;
+  background: #F2EEEB;
+}
+
+i {
+  position: absolute;
+  bottom: 50px;
+  left: 48%;
+  font-size: 5rem;
+  color: white;
+}
+
+i:hover,
+i:focus {
+  color: #6B677C;
 }
 
 h1 {
-  color: #F15632;
+  color: #6B677C;
   font-family: 'Fjalla One', sans-serif;
   font-size: 12rem;
   letter-spacing: 3px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 h1 span {
@@ -299,11 +314,17 @@ h1 span {
 }
 
 header p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.8rem;
-  letter-spacing: 0.5px;
   color: black;
   text-align: center;
+}
+
+h2 {
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: lowercase;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  line-height: 50px;
+  margin: 20px 0;
 }
 
 .headerText {
@@ -317,49 +338,131 @@ header p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 70vh;
+  height: 80vh;
+}
+
+.questionContainer {
+  height: 100vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.answerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #F2EEEB;
 }
 
 .containerOne {
-  height: 20vh;
+  background: #6B677C;
+  height: 100vh;
   text-align: center;
 }
 
+.containerOne h2,
+.containerOne label {
+  color: white;
+}
+
 .containerTwo {
-  height: 20vh;
   text-align: center;
 }
 
 .containerThree {
-  height: 20vh;
+  background: #F2EEEB;
   text-align: center;
 }
 
 .button {
+  background: #F2EEEB;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 button {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 4rem;
+  text-transform: lowercase;
+  color: white;
   text-align: center;
-  border: 1px solid #2a9d8f;
-  background: #2a9d8f;
-  padding: 10px;
+  border: 1px solid #FA7F51;
+  background: #FA7F51;
+  letter-spacing: 2px;
+  padding: 15px 20px;
   margin: 20px auto;
 }
 
 button:hover,
 button:focus {
-  background: white;
-  border: 1px solid black;
+  background: #F3BDA5;
+  border: 1px solid white;
 }
 
 .answer {
-  height: 20vh;
+  background: #F2EEEB;
+  height: 70vh;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 label {
   margin-right: 15px;
+}
+
+.containerTwo {
+  background: linear-gradient(319deg, #c26a91, #e6e3e1);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 6s ease infinite;
+  animation: AnimationName 6s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 29% 0%;
+  }
+  50% {
+    background-position: 72% 100%;
+  }
+  100% {
+    background-position: 29% 0%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 29% 0%;
+  }
+  50% {
+    background-position: 72% 100%;
+  }
+  100% {
+    background-position: 29% 0%;
+  }
 }
