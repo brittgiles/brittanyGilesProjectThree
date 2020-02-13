@@ -1,15 +1,9 @@
 @import 'setup';
 @import 'variables';
 
-body {
-    background: #F2F2F4;
-}
-
 header {
     height: 100vh;
     width: 100%;
-    background: #F2EEEB;
-    
 }
 
 i {
@@ -22,15 +16,15 @@ i {
 
 i:hover,
 i:focus {
-    color: #6B677C;
+    color: $primaryColor;
+    transition: 1.5s;
 }
 
 h1 {
-    color: #6B677C;
+    color: $primaryColor;
     font-family: 'Fjalla One', sans-serif;
     font-size: 12rem;
     letter-spacing: 3px;
-    text-align: center;
     text-transform: lowercase;
 }
 
@@ -40,11 +34,6 @@ h1 span {
     font-style: italic;
     text-transform: lowercase;
     color: black;
-}
-
-header p {
-    color: black;
-    text-align: center;
 }
 
 h2 {
@@ -57,29 +46,25 @@ h2 {
 }
 
 .headerText {
+    height: 80vh;
+}
+
+.headerText,
+.questionContainer,
+.answerContainer,
+.answer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 80vh;
 }
 
 .questionContainer {
     height: 100vh;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.answerContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: #F2EEEB;
 }
 
 .containerOne {
-    background: #6B677C;
+    background: $primaryColor;
     height: 100vh;
     text-align: center;
     h2,
@@ -88,17 +73,20 @@ h2 {
         }
 }
 
-.containerTwo {
+h1, 
+header p, 
+.containerTwo,
+.containerThree,
+.answer,
+button {
     text-align: center;
 }
 
-.containerThree {
-    background: #F2EEEB;
-    text-align: center;
+.headerText p {
+    margin-top: 25px;
 }
 
 .button {
-    background: #F2EEEB;
     display: flex;
 }
 
@@ -107,9 +95,8 @@ button {
     font-size: 4rem;
     text-transform: lowercase;
     color: white;
-    text-align: center;
-    border: 1px solid #FA7F51;
-    background: #FA7F51;
+    border: 1px solid $secondaryColor;
+    background: $secondaryColor;
     letter-spacing: 2px;
     padding: 15px 20px;
     margin: 20px auto;
@@ -119,15 +106,11 @@ button:hover,
 button:focus {
     background: #F3BDA5;
     border: 1px solid white;
+    transition: 1.5s;
 }
 
 .answer {
-    background: #F2EEEB;
     height: 70vh;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 label {
@@ -135,6 +118,7 @@ label {
 }
 
 .containerTwo {
+    // gradient animation made with gradient-animator
      background: linear-gradient(319deg, #c26a91, #e6e3e1);
     background-size: 400% 400%;
 
@@ -157,4 +141,14 @@ label {
         50%{background-position:72% 100%}
         100%{background-position:29% 0%}
     }
+}
+
+// media queries
+@media (max-width: 940px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
 }

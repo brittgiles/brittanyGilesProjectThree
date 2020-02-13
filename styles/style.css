@@ -250,6 +250,10 @@ p {
   color: black;
 }
 
+body {
+  background: #F2EEEB;
+}
+
 ul {
   list-style: none;
 }
@@ -273,14 +277,9 @@ html {
   margin: 0 auto;
 }
 
-body {
-  background: #F2F2F4;
-}
-
 header {
   height: 100vh;
   width: 100%;
-  background: #F2EEEB;
 }
 
 i {
@@ -294,6 +293,8 @@ i {
 i:hover,
 i:focus {
   color: #6B677C;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 h1 {
@@ -301,7 +302,6 @@ h1 {
   font-family: 'Fjalla One', sans-serif;
   font-size: 12rem;
   letter-spacing: 3px;
-  text-align: center;
   text-transform: lowercase;
 }
 
@@ -311,11 +311,6 @@ h1 span {
   font-style: italic;
   text-transform: lowercase;
   color: black;
-}
-
-header p {
-  color: black;
-  text-align: center;
 }
 
 h2 {
@@ -328,6 +323,13 @@ h2 {
 }
 
 .headerText {
+  height: 80vh;
+}
+
+.headerText,
+.questionContainer,
+.answerContainer,
+.answer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,36 +340,11 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 80vh;
 }
 
 .questionContainer {
   height: 100vh;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.answerContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #F2EEEB;
 }
 
 .containerOne {
@@ -381,17 +358,20 @@ h2 {
   color: white;
 }
 
-.containerTwo {
+h1,
+header p,
+.containerTwo,
+.containerThree,
+.answer,
+button {
   text-align: center;
 }
 
-.containerThree {
-  background: #F2EEEB;
-  text-align: center;
+.headerText p {
+  margin-top: 25px;
 }
 
 .button {
-  background: #F2EEEB;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,7 +382,6 @@ button {
   font-size: 4rem;
   text-transform: lowercase;
   color: white;
-  text-align: center;
   border: 1px solid #FA7F51;
   background: #FA7F51;
   letter-spacing: 2px;
@@ -414,22 +393,12 @@ button:hover,
 button:focus {
   background: #F3BDA5;
   border: 1px solid white;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .answer {
-  background: #F2EEEB;
   height: 70vh;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 label {
