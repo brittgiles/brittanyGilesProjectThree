@@ -97,7 +97,21 @@ $(function() {
                     wineDescription.push(colorChoice[index].novice);
                 }
             }
+
+            // check if any of the questions has no value and send an alert if so
+            if (!$("input[name=questionOne]:checked").val()) {
+                alert('Select an answer for the first question to get your wine! 🍷');
+            } 
+            if (!$("input[name=questionTwo]:checked").val()) {
+                alert('Select an answer for the second question to get your wine! 🍷');
+            } 
+            if (!$("input[name=questionThree]:checked").val()) {
+                alert('Select an answer for the last question to get your wine! 🍷');
+            }
         }
+
+        //on click of answer, scroll to answer container
+        $('button').get(0).scrollIntoView();
 
         //printing out result
         $('.answer').html(`<h2>Pour yourself some ${results} </h2>

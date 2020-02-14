@@ -7,17 +7,41 @@ header {
 }
 
 i {
-    position: absolute;
-    bottom: 50px;
-    left: 48%;
     font-size: 5rem;
     color: white;
 }
 
-i:hover,
-i:focus {
+.arrowOne,
+.arrowTwo,
+.arrowThree {
+    position: absolute;
+    left: 48%;
+}
+
+.arrowOne {
+    bottom: 50px;
+}
+
+.arrowOne:hover,
+.arrowOne:focus,
+.arrowThree:hover,
+.arrowThree:focus {
     color: $primaryColor;
     transition: 1.5s;
+}
+
+.arrowTwo {
+    top: 185%;
+}
+
+.arrowTwo:hover,
+.arrowTwo:focus {
+    color: $tertiaryColor;
+    transition: 1.5s;
+}
+
+.arrowThree {
+    top: 285%;
 }
 
 h1 {
@@ -82,6 +106,10 @@ button {
     text-align: center;
 }
 
+.containerThree {
+    height: 80vh;
+}
+
 .headerText p {
     margin-top: 25px;
 }
@@ -109,8 +137,12 @@ button:focus {
     transition: 1.5s;
 }
 
+button:focus {
+    border: 3px solid $secondaryColor;
+}
+
 .answer {
-    height: 70vh;
+    height: 50vh;
 }
 
 label {
