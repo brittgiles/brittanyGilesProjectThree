@@ -1,4 +1,3 @@
-
 const wineOptions = {
     white: [
         {
